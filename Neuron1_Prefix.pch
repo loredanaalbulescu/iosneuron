@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Neuron1' target in the 'Neuron1' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

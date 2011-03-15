@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* Neuron1AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Neuron1AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* Neuron1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Neuron1ViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* Neuron1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Neuron1ViewController.m */; };
+		CE451175131A7B8C00B03B6D /* LearningRule.m in Sources */ = {isa = PBXBuildFile; fileRef = CE451174131A7B8C00B03B6D /* LearningRule.m */; };
+		CE45117A131A7CB800B03B6D /* TrainingSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CE451179131A7CB800B03B6D /* TrainingSet.m */; };
+		CE45117D131A7EC600B03B6D /* TrainingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45117C131A7EC600B03B6D /* TrainingElement.m */; };
+		CE805D4A132A564400D09DB7 /* BackPropagation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE805D49132A564400D09DB7 /* BackPropagation.m */; };
+		CE81229D131BFA7000E5FA6D /* NeuronFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81229C131BFA7000E5FA6D /* NeuronFactory.m */; };
+		CE8122A1131BFC0F00E5FA6D /* NeuronProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8122A0131BFC0F00E5FA6D /* NeuronProperties.m */; };
+		CE82363C1326912D00FDB985 /* InputFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE82363B1326912D00FDB985 /* InputFunction.m */; };
+		CE82363F1326914A00FDB985 /* SummingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE82363E1326914A00FDB985 /* SummingFunction.m */; };
+		CE8236421326915700FDB985 /* TransferFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8236411326915700FDB985 /* TransferFunction.m */; };
+		CE8236451326939300FDB985 /* WeightsFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8236441326939300FDB985 /* WeightsFunction.m */; };
+		CE826FDF131AB78B00B38C5F /* MultiLayerPerceptron.m in Sources */ = {isa = PBXBuildFile; fileRef = CE826FDE131AB78B00B38C5F /* MultiLayerPerceptron.m */; };
+		CE82E0671318F69F0018F54A /* Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE82E0661318F69F0018F54A /* Layer.m */; };
+		CE8576D4131A68930059920E /* NeuralNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8576D3131A68930059920E /* NeuralNetwork.m */; };
+		CE87D1F7132E0FEF00F4AAAC /* Sigmoid.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87D1F6132E0FEF00F4AAAC /* Sigmoid.m */; };
+		CE8893E3131D5FBA00F274D2 /* ConnectionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8893E2131D5FBA00F274D2 /* ConnectionFactory.m */; };
+		CE8F78C5132BC03000EE49E6 /* SupervisedTrainingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F78C4132BC03000EE49E6 /* SupervisedTrainingElement.m */; };
+		CE8FDFA71303FFC200CCF332 /* Neuron.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FDFA61303FFC200CCF332 /* Neuron.m */; };
+		CE8FDFAA13040EC300CCF332 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FDFA913040EC300CCF332 /* Connection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Neuron1AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron1AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Neuron1AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neuron1AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Neuron1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neuron1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* Neuron1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Neuron1ViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* Neuron1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron1ViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* Neuron1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neuron1ViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Neuron1_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron1_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Neuron1-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Neuron1-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		CE451173131A7B8C00B03B6D /* LearningRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearningRule.h; sourceTree = "<group>"; };
+		CE451174131A7B8C00B03B6D /* LearningRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningRule.m; sourceTree = "<group>"; };
+		CE451178131A7CB800B03B6D /* TrainingSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingSet.h; sourceTree = "<group>"; };
+		CE451179131A7CB800B03B6D /* TrainingSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingSet.m; sourceTree = "<group>"; };
+		CE45117B131A7EC600B03B6D /* TrainingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingElement.h; sourceTree = "<group>"; };
+		CE45117C131A7EC600B03B6D /* TrainingElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingElement.m; sourceTree = "<group>"; };
+		CE805D48132A564400D09DB7 /* BackPropagation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackPropagation.h; sourceTree = "<group>"; };
+		CE805D49132A564400D09DB7 /* BackPropagation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackPropagation.m; sourceTree = "<group>"; };
+		CE81229B131BFA7000E5FA6D /* NeuronFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuronFactory.h; sourceTree = "<group>"; };
+		CE81229C131BFA7000E5FA6D /* NeuronFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuronFactory.m; sourceTree = "<group>"; };
+		CE81229F131BFC0F00E5FA6D /* NeuronProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuronProperties.h; sourceTree = "<group>"; };
+		CE8122A0131BFC0F00E5FA6D /* NeuronProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuronProperties.m; sourceTree = "<group>"; };
+		CE82363A1326912D00FDB985 /* InputFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputFunction.h; sourceTree = "<group>"; };
+		CE82363B1326912D00FDB985 /* InputFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputFunction.m; sourceTree = "<group>"; };
+		CE82363D1326914A00FDB985 /* SummingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummingFunction.h; sourceTree = "<group>"; };
+		CE82363E1326914A00FDB985 /* SummingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummingFunction.m; sourceTree = "<group>"; };
+		CE8236401326915700FDB985 /* TransferFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferFunction.h; sourceTree = "<group>"; };
+		CE8236411326915700FDB985 /* TransferFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferFunction.m; sourceTree = "<group>"; };
+		CE8236431326939300FDB985 /* WeightsFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightsFunction.h; sourceTree = "<group>"; };
+		CE8236441326939300FDB985 /* WeightsFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightsFunction.m; sourceTree = "<group>"; };
+		CE826FDD131AB78B00B38C5F /* MultiLayerPerceptron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLayerPerceptron.h; sourceTree = "<group>"; };
+		CE826FDE131AB78B00B38C5F /* MultiLayerPerceptron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLayerPerceptron.m; sourceTree = "<group>"; };
+		CE82E0651318F69F0018F54A /* Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layer.h; sourceTree = "<group>"; };
+		CE82E0661318F69F0018F54A /* Layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layer.m; sourceTree = "<group>"; };
+		CE8576D2131A68930059920E /* NeuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuralNetwork.h; sourceTree = "<group>"; };
+		CE8576D3131A68930059920E /* NeuralNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuralNetwork.m; sourceTree = "<group>"; };
+		CE87D1F5132E0FEF00F4AAAC /* Sigmoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sigmoid.h; sourceTree = "<group>"; };
+		CE87D1F6132E0FEF00F4AAAC /* Sigmoid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sigmoid.m; sourceTree = "<group>"; };
+		CE8893E1131D5FBA00F274D2 /* ConnectionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionFactory.h; sourceTree = "<group>"; };
+		CE8893E2131D5FBA00F274D2 /* ConnectionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionFactory.m; sourceTree = "<group>"; };
+		CE8F78C3132BC03000EE49E6 /* SupervisedTrainingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupervisedTrainingElement.h; sourceTree = "<group>"; };
+		CE8F78C4132BC03000EE49E6 /* SupervisedTrainingElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupervisedTrainingElement.m; sourceTree = "<group>"; };
+		CE8FDFA51303FFC200CCF332 /* Neuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron.h; sourceTree = "<group>"; };
+		CE8FDFA61303FFC200CCF332 /* Neuron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neuron.m; sourceTree = "<group>"; };
+		CE8FDFA813040EC300CCF332 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		CE8FDFA913040EC300CCF332 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE8893CD131D54A500F274D2 /* Functions */,
+				CE81229E131BFA7800E5FA6D /* Factories */,
+				CE451186131A7F9C00B03B6D /* Layer */,
+				CE451185131A7F7F00B03B6D /* Learning */,
+				1D3623240D0F684500981E51 /* Neuron1AppDelegate.h */,
+				1D3623250D0F684500981E51 /* Neuron1AppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* Neuron1ViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* Neuron1ViewController.m */,
+				CE8576D2131A68930059920E /* NeuralNetwork.h */,
+				CE8576D3131A68930059920E /* NeuralNetwork.m */,
+				CE826FDD131AB78B00B38C5F /* MultiLayerPerceptron.h */,
+				CE826FDE131AB78B00B38C5F /* MultiLayerPerceptron.m */,
+				CE805D48132A564400D09DB7 /* BackPropagation.h */,
+				CE805D49132A564400D09DB7 /* BackPropagation.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Neuron1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Neuron1_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* Neuron1ViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Neuron1-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE451185131A7F7F00B03B6D /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				CE451173131A7B8C00B03B6D /* LearningRule.h */,
+				CE451174131A7B8C00B03B6D /* LearningRule.m */,
+				CE451178131A7CB800B03B6D /* TrainingSet.h */,
+				CE451179131A7CB800B03B6D /* TrainingSet.m */,
+				CE45117B131A7EC600B03B6D /* TrainingElement.h */,
+				CE45117C131A7EC600B03B6D /* TrainingElement.m */,
+				CE8F78C3132BC03000EE49E6 /* SupervisedTrainingElement.h */,
+				CE8F78C4132BC03000EE49E6 /* SupervisedTrainingElement.m */,
+				CE87D1F5132E0FEF00F4AAAC /* Sigmoid.h */,
+				CE87D1F6132E0FEF00F4AAAC /* Sigmoid.m */,
+			);
+			name = Learning;
+			sourceTree = "<group>";
+		};
+		CE451186131A7F9C00B03B6D /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FDFA51303FFC200CCF332 /* Neuron.h */,
+				CE8FDFA61303FFC200CCF332 /* Neuron.m */,
+				CE8FDFA813040EC300CCF332 /* Connection.h */,
+				CE8FDFA913040EC300CCF332 /* Connection.m */,
+				CE82E0651318F69F0018F54A /* Layer.h */,
+				CE82E0661318F69F0018F54A /* Layer.m */,
+			);
+			name = Layer;
+			sourceTree = "<group>";
+		};
+		CE81229E131BFA7800E5FA6D /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				CE81229B131BFA7000E5FA6D /* NeuronFactory.h */,
+				CE81229C131BFA7000E5FA6D /* NeuronFactory.m */,
+				CE81229F131BFC0F00E5FA6D /* NeuronProperties.h */,
+				CE8122A0131BFC0F00E5FA6D /* NeuronProperties.m */,
+				CE8893E1131D5FBA00F274D2 /* ConnectionFactory.h */,
+				CE8893E2131D5FBA00F274D2 /* ConnectionFactory.m */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		CE8893CD131D54A500F274D2 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				CE82363A1326912D00FDB985 /* InputFunction.h */,
+				CE82363B1326912D00FDB985 /* InputFunction.m */,
+				CE82363D1326914A00FDB985 /* SummingFunction.h */,
+				CE82363E1326914A00FDB985 /* SummingFunction.m */,
+				CE8236401326915700FDB985 /* TransferFunction.h */,
+				CE8236411326915700FDB985 /* TransferFunction.m */,
+				CE8236431326939300FDB985 /* WeightsFunction.h */,
+				CE8236441326939300FDB985 /* WeightsFunction.m */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Neuron1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Neuron1" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neuron1;
+			productName = Neuron1;
+			productReference = 1D6058910D05DD3D006BFB54 /* Neuron1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Neuron1" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Neuron1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* Neuron1ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* Neuron1AppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* Neuron1ViewController.m in Sources */,
+				CE8FDFA71303FFC200CCF332 /* Neuron.m in Sources */,
+				CE8FDFAA13040EC300CCF332 /* Connection.m in Sources */,
+				CE82E0671318F69F0018F54A /* Layer.m in Sources */,
+				CE8576D4131A68930059920E /* NeuralNetwork.m in Sources */,
+				CE451175131A7B8C00B03B6D /* LearningRule.m in Sources */,
+				CE45117A131A7CB800B03B6D /* TrainingSet.m in Sources */,
+				CE45117D131A7EC600B03B6D /* TrainingElement.m in Sources */,
+				CE826FDF131AB78B00B38C5F /* MultiLayerPerceptron.m in Sources */,
+				CE81229D131BFA7000E5FA6D /* NeuronFactory.m in Sources */,
+				CE8122A1131BFC0F00E5FA6D /* NeuronProperties.m in Sources */,
+				CE8893E3131D5FBA00F274D2 /* ConnectionFactory.m in Sources */,
+				CE82363C1326912D00FDB985 /* InputFunction.m in Sources */,
+				CE82363F1326914A00FDB985 /* SummingFunction.m in Sources */,
+				CE8236421326915700FDB985 /* TransferFunction.m in Sources */,
+				CE8236451326939300FDB985 /* WeightsFunction.m in Sources */,
+				CE805D4A132A564400D09DB7 /* BackPropagation.m in Sources */,
+				CE8F78C5132BC03000EE49E6 /* SupervisedTrainingElement.m in Sources */,
+				CE87D1F7132E0FEF00F4AAAC /* Sigmoid.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Neuron1_Prefix.pch;
+				INFOPLIST_FILE = "Neuron1-Info.plist";
+				PRODUCT_NAME = Neuron1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Neuron1_Prefix.pch;
+				INFOPLIST_FILE = "Neuron1-Info.plist";
+				PRODUCT_NAME = Neuron1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Neuron1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Neuron1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
