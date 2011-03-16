@@ -1,5 +1,0 @@
-/Users/user/Documents/Neuron1.2/Classes/TrainingElement.m:43: warning: incomplete implementation of class 'TrainingElement'
-/Users/user/Documents/Neuron1.2/Classes/TrainingElement.m:43: warning: method definition for '-setInput:' not found
-/Users/user/Documents/Neuron1.2/Classes/TrainingElement.m:43: warning: method definition for '-getInput' not found
-/Users/user/Documents/Neuron1.2/Classes/TrainingElement.m:43: warning: method definition for '-setLabel:' not found
-/Users/user/Documents/Neuron1.2/Classes/TrainingElement.m:43: warning: method definition for '-getLabel' not found

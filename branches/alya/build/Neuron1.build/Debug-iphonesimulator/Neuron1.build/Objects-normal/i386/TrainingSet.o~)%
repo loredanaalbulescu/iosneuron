@@ -1,5 +1,0 @@
-/Users/user/Documents/Neuron1.2/Classes/TrainingSet.m:39: warning: incomplete implementation of class 'TrainingSet'
-/Users/user/Documents/Neuron1.2/Classes/TrainingSet.m:39: warning: method definition for '-elementAt:' not found
-/Users/user/Documents/Neuron1.2/Classes/TrainingSet.m:39: warning: method definition for '-trainingElements' not found
-/Users/user/Documents/Neuron1.2/Classes/TrainingSet.m:39: warning: method definition for '-removeElementAt:' not found
-/Users/user/Documents/Neuron1.2/Classes/TrainingSet.m:39: warning: method definition for '-initWithLabel:' not found
