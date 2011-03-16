@@ -1,0 +1,8 @@
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: incomplete implementation of class 'LearningRule'
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-calculateDelta:' not found
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-updateNeuronWeights:' not found
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-adjustHiddenLayers' not found
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-adjustOutputNeurons:' not found
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-updateNetworkWeights:' not found
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-setTrainingSet:' not found
+/Users/user/Documents/Neuron1.4/Classes/LearningRule.m:171: warning: method definition for '-initWithNeuralNetwork:' not found
